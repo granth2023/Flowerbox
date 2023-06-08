@@ -54,3 +54,4 @@ const data = [
 		tags: ['mixed', 'bouquet (with basket)', 'love', 'decor'],
 	},
 ]
+export default data

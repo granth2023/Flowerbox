@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 5%; /* Add padding-top to create space at the top of the page */
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 20px;
+    width: 82%;
+  }
+  
+  .Links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .Links h2 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+  }
+  
+  .Links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .Links h2 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .coverPhoto {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 85%;
+    max-width: 100%; /* Add max-width to ensure the cover photo doesn't exceed its container */
+  }
+  
+  .coverPhoto img {
+    width: 100%; /* Set the width of the image to 100% to fill the container */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .photos > div {
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .photos > div img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .photos > div .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .photos > div .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .photos > div .tags span {
+    background-color: pink;
+    color: white;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: fit-content;
+  }
+  
+  .photos > div .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .photos > div .name {
+    margin: 0;
+  }
+  
+  .photos > div .price {
+    background-color: pink;
+    color: white;
+    padding: 5px;
+    position: relative;
+    bottom: 50px; /* Adjust the desired distance from the bottom */
+    left: 300px;
+  }
+
+  .footer {
+    background-color: lightgray;
+    padding: 20px;
+    width: 82%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .footer .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer .cs,
+.footer .fb {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin-right: 15px; /* Add margin-right to create space between the columns */
+  max-width: 33%; /* Add max-width to limit the width of the columns */
+}
+  .footer .cs {
+    flex: 1;
+    text-align: center;
+    white-space: nowrap; /* Add this property to keep the text on one line */
+  }
+  
+  .footer h2 {
+    margin: 0;
+  }
+  
+  .footer h3 {
+    margin: 5px 0;
+    font-size: 14px;
+  }
